@@ -9,7 +9,7 @@ OBJDUMP = $(PREFIX)objdump
 FLASH   = st-flash
 OPENOCD = openocd
 
-OPTFLAGS ?= -O3
+OPTFLAGS ?= -Os
 DBGFLAGS ?= -g -DNDEBUG
 
 CFLAGS   += $(OPTFLAGS) \
