@@ -139,7 +139,7 @@ void __attribute__((noreturn)) __stack_chk_fail(void)
 
 int main(void)
 {
-	__stack_chk_guard = random32();
+	__stack_chk_guard = 0x0;
 	setup();
 	memory_protect();
 	oledInit();
